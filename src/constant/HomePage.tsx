@@ -46,7 +46,7 @@ const HomePage = () => {
       (item: UserData, index: number) => index < endIndex && index >= startIndex
     );
     setShowData(data);
-  }, [startIndex, endIndex]);
+  }, [startIndex, endIndex, showData]);
 
   useEffect(() => {
     if (userData.length > 0) {
@@ -64,7 +64,7 @@ const HomePage = () => {
       );
       setShowData(data);
     }
-  }, [userData]);
+  }, [userData, showData]);
 
   return (
     <section>
