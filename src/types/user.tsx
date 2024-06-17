@@ -9,4 +9,5 @@ export interface RenderTableProps {
   storeValue: UserData[];
   setEditData: (data: UserData) => void;
   setEditDataById: (id: number) => void;
+  startIndex:number;
 }

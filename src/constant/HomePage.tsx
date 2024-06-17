@@ -118,6 +118,7 @@ const HomePage = () => {
               storeValue={showData}
               setEditData={setEditData}
               setEditDataById={setEditDataById}
+              startIndex={startIndex}
             />
           )}
         </Row>

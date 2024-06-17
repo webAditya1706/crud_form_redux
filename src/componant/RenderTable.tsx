@@ -8,6 +8,7 @@ function RenderTable({
   storeValue,
   setEditData,
   setEditDataById,
+  startIndex,
 }: RenderTableProps) {
   const dispatch = useDispatch();
   const handleEdit = (data: UserData, id: number) => {
@@ -42,13 +43,13 @@ function RenderTable({
               <div className="action_parent">
                 <button
                   className="btn btn-primary"
-                  onClick={() => handleEdit(data, index)}
+                  onClick={() => handleEdit(data, startIndex + index)}
                 >
                   Edit
                 </button>
                 <button
                   className="btn btn-danger"
-                  onClick={() => handleDelete(index)}
+                  onClick={() => handleDelete(startIndex + index)}
                 >
                   Delete
                 </button>
